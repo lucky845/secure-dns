@@ -63,6 +63,9 @@
 
 iOS / iPadOS：使用 Safari 浏览器（其他浏览器只会下载该文件，不会弹出安装提示）打开 GitHub 上的 mobileconfig 文件，然后点击“允许”按钮，描述文件将完成下载。打开 **系统设置 => 通用 => VPN、DNS 与设备管理**，选择已下载的描述文件并点击“安装”按钮。
 
+**⚠️ IOS设备点击链接下载的会被添加.txt后缀导致Safari识别不到描述文件**
+**IOS设备可以先下载 mobileconfig 文件后访问 https://dns.senkl.eu/tool.html 网站，将刚才下载的mobileconfig文件上传重新在网站生成一个新的 mobileconfig 文件，Safari 浏览器才能正确的识别并下载。**
+
 macOS [（官方文档）](https://support.apple.com/zh-cn/guide/mac-help/mh35561/)：
 
 1. 下载并保存描述文件，将其重命名为 `NAME.mobileconfig`，而不是 txt 之类的扩展名。
